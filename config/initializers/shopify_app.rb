@@ -7,4 +7,7 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
   config.after_authenticate_job = false
   config.session_repository = Shop
+  config.webhooks = [
+    {topic: 'carts/update', address: 'https://nameless-fjord-56912.herokuapp.com/webhooks/carts_update'}
+  ]
 end
