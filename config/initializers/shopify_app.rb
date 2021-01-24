@@ -8,6 +8,6 @@ ShopifyApp.configure do |config|
   config.after_authenticate_job = false
   config.session_repository = Shop
   config.webhooks = [
-    {topic: 'carts/update', address: 'https://nameless-fjord-56912.herokuapp.com/webhooks/carts_update'}
+    {topic: 'carts/update', address: 'https://evening-cliffs-94397.herokuapp.com/webhooks/carts_update'}
   ]
 end
